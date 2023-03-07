@@ -28,3 +28,11 @@ This repo is forked from https://github.com/xuebinqin/DIS.
     ```bash
     poetry run pre-commit install
     ```
+
+## Getting Started
+
+Download pretrained models:
+
+```bash
+poetry run download-models
+```

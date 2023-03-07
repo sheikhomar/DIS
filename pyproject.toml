@@ -5,6 +5,7 @@ description = "Project for the paper: Highly Accurate Dichotomous Image Segmenta
 authors = ["Xuebin Qin <xuebin@ualberta.ca>"]
 license = "Apache License 2.0"
 readme = "README.md"
+packages = [{include = "is_net"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -17,6 +18,8 @@ scikit-image = "^0.20.0"
 torch = "^1.13.1"
 torchvision = "^0.14.1"
 
+[tool.poetry.scripts]
+download-models = "scripts.download_models:main"
 
 [build-system]
 requires = ["poetry-core"]
